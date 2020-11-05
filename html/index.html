@@ -8,10 +8,40 @@
     <title>Top Casa Fina</title>
 </head>
 <body>
-    <section class="container">
+    <header>
+        <nav class="nav navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">TopCasaFina Arquitetura</a>
+                </div>
+                <div id="collapse-navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#sobre-nos">Sobre Nós</a></li>
+                        <li><a href="#projetos">Nossos Projetos</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <h1>TopCasaFina Arquitetura</h1>
+            <p>Projetando a casa dos sonhos desde 2000 A.C</p>
+            <button class="btn btn-primary btn-lg">Contate-nos agora</button>
+        </div>
+    </header>
+
+    <section id="sobre-nos" class="container">
         <h2>Sobre Nós</h2>
         <img class="img-responsive" src="../img/empresa.jpg" alt="pessoas olhando o notebook">
-
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="headingOne">
@@ -70,7 +100,7 @@
         
     </div>
 
-    <section class="container">
+    <section id="projetos" class="container">
         <h2>Nossos Projetos</h2>
     <figure class="thumbnail">
         <img src="../img/projetos/casa-castelo.png" alt="Foto da Casa Castelo">
@@ -113,7 +143,7 @@
     </figure>
     </section>
 
-    <section>
+    <section id="depoimentos">
         <h2 class="titulo-depoimentos container">Depoimentos de Clientes</h2>
 
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -162,14 +192,14 @@
     </div>
     </section>
 
-    <section class="container">
+    <section id="video" class="container">
         <h2>Video Institucional</h2>
         <div class="embed-responsive embed-responsive-16by9 ">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Py1Aygel" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
 
-    <section>
+    <section id="contato" class="container">
         <h2>Contato</h2>
         <p>Entre em contato conosco</p>
         <form action="">
@@ -210,12 +240,23 @@
             </select>
 
             <button class="btn btn-primary" type="submit">Enviar</button>
-            
         </form>
     </section>
+
+    <footer>
+        <address>
+            <strong>TopCasaFina Arquitetura</strong><br>
+            Rua Vergueiro, 3185, Vila Mariana<br>
+            São Paulo, SP<br>
+            Tel: (11) 5571-2751 ou 5083-3884<br>
+        </address>
     
-    
-    <script src="../jquery/jquery.js"></script>
+        <address>E-mail: contato.topcasafina@alura.com.br</address>
+    </footer>
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/navbar-animation-fix.js"></script>
     <script src="../bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
 </body>
 </html> 
